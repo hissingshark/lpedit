@@ -16,14 +16,18 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
  */
 
+// +build !GTK
+
 package main
 
-import "os"
+import (
+	"os"
 
-import "github.com/therecipe/qt/widgets"
+	"github.com/therecipe/qt/widgets"
 
-import "github.com/StarAurryon/lpedit/qtctrl"
-import "github.com/StarAurryon/lpedit/ui"
+	"github.com/StarAurryon/lpedit/qt/qtctrl"
+	"github.com/StarAurryon/lpedit/qt/ui"
+)
 
 func main() {
     app := widgets.NewQApplication(len(os.Args), os.Args)
