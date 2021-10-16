@@ -27,7 +27,7 @@ import "io/ioutil"
 import "os"
 
 import "github.com/StarAurryon/lpedit-lib/model/pod"
-import "github.com/StarAurryon/lpedit/qtctrl"
+import "github.com/StarAurryon/lpedit/qt/qtctrl"
 
 type LPEdit struct {
     *LPEditUI

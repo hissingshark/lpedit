@@ -25,7 +25,7 @@ import "sort"
 import "strconv"
 
 import "github.com/StarAurryon/lpedit-lib/model/pod"
-import "github.com/StarAurryon/lpedit/qtctrl"
+import "github.com/StarAurryon/lpedit/qt/qtctrl"
 
 type Pedal struct {
     *PedalUI
