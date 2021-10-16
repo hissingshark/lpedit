@@ -30,7 +30,7 @@ LPEdit is a reimplementation of Line6 HD Edit made through usb protocol reverse 
 - POD HD 300
 
 ## Manual building
-
+### Qt based GUI
 You will need my patched verion of QT bindings for golang available at:
 https://github.com/StarAurryon/qt
 
@@ -39,6 +39,13 @@ Then run the following commands:
 go get -v github.com/StarAurryon/lpedit (this would not compile as qtdeploy must be run to generate missing go file)
 $(go env GOPATH)/bin/qtdeploy
 ```
+##
+### GTK based GUI
+You need to first run:
+`go get -v github.com/StarAurryon/lpedit`
+
+Then compile with:
+`go build -tags GTK`
 
 ## Known bugs
 
